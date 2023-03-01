@@ -37,6 +37,17 @@ p {
   margin: 0;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+ 
+}
+
 .unline {
   text-decoration: none;
 }
@@ -239,19 +250,24 @@ p {
   background-position: center;
 } */
 
-.features-icon {
-  display: inline;
-  background-color: blueviolet;
-  
-
-  
-
+.features-button {
+  margin: 0;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 0;
 }
+
+.features-icon {
+  border: 3px solid red;
+}
+
 .iconicon {
   display: block;
   width: 120px;
   height: 120px;
-  background-color: blueviolet;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -366,17 +382,15 @@ background-image: url(../images/icons/antenna.svg);
   line-height: 1.5;
 }
 footer {
-
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.container-footer{
+.container-footer {
   display: flex;
 }
 
 .logologo {
-  display: inline;
   margin-right: 120px;
 }
 
@@ -388,33 +402,40 @@ footer {
 }
 
 .social {
-
-  margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   color: var(--body-back);
 }
 
-.social .social-button + .social-button {
-  margin-left: 16px;
-} 
+.section-social {
+  
+
+  border: 3px solid red;
+
+}
+
+.social-list {
+  display: flex;
+  gap: 16px;
+}
+
+
 
 .social-button {
-  display: inline;
+
+  display: block;
   width: 40px;
   height: 40px;
-  padding: 0;
+
   background: rgba(255, 255, 255, 0.1);
   border: 0;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
 }
+
+
+
 
 .social-icon {
-  display: inline;
-  justify-self: center;
-}
 
+}
 
 .filter {
   padding-top: 96px;
