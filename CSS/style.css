@@ -39,6 +39,7 @@ p {
 }
 
 button {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -257,6 +258,10 @@ svg {
   border-radius: 4px;
   margin-bottom: 8px;
   border: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-icon {
@@ -388,7 +393,9 @@ background-image: url(../images/icons/antenna.svg);
 }
 
 .icons-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
   border: 0;
@@ -425,6 +432,12 @@ background-image: url(../images/icons/antenna.svg);
 .customer-button {
   margin: 0;
   padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
   border: 1px solid var(--customers-slate);
   border-radius: 4px;
   width: 168px;
@@ -457,16 +470,18 @@ footer {
 }
 
 .section-social {
-  border: 3px solid red;
 }
 
-.social-list {
+.social-list {  
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
 .social-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
 
