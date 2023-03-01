@@ -10,6 +10,7 @@
   --button-active-text: rgba(255, 255, 255, 1);
   --h1-coolor: rgba(244, 244, 253, 1);
   --body-back: #ffffff;
+  --customers-slate: rgba(142, 143, 153, 1);
 }
 
 body {
@@ -45,7 +46,6 @@ button {
 svg {
   margin: 0;
   padding: 0;
- 
 }
 
 .unline {
@@ -381,6 +381,63 @@ background-image: url(../images/icons/antenna.svg);
   margin-bottom: 0;
   line-height: 1.5;
 }
+
+.icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.icons-button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--button-active);
+  width: 40px;
+  height: 40px;
+
+}
+
+
+
+.section-customers {
+  list-style: none;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.header-customers {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.customers {
+  display: flex;
+  gap: 24px;
+}
+
+.customer-button{
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--customers-slate);
+  border-radius: 4px;
+ width: 168px;
+ height: 68px;
+
+
+}
+
+
 footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -407,10 +464,7 @@ footer {
 }
 
 .section-social {
-  
-
   border: 3px solid red;
-
 }
 
 .social-list {
@@ -418,23 +472,17 @@ footer {
   gap: 16px;
 }
 
-
-
 .social-button {
-
   display: block;
   width: 40px;
   height: 40px;
 
   background: rgba(255, 255, 255, 0.1);
   border: 0;
+  border-radius: 50%;
 }
 
-
-
-
 .social-icon {
-
 }
 
 .filter {
@@ -463,6 +511,10 @@ footer {
 .cards .item {
   width: 360px;
   background: var(--body-back);
+}
+.cards .item:hover,
+.cards .item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .textcard {
@@ -508,6 +560,9 @@ color: deeppink;
 .button.secondary:focus {
   background-color: var(--button-active);
   color: var(--button-active-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--button-active);
+
 }
 
 /* ________________---------FONTS--------______________ */
