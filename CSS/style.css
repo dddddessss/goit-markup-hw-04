@@ -51,10 +51,7 @@ button {
   padding: 0;
 }
 
-svg {
-  margin: 0;
-  padding: 0;
-}
+
 
 .unline {
   text-decoration: none;
@@ -397,10 +394,23 @@ background-image: url(../images/icons/antenna.svg);
   margin: 0;
   border: 0;
   border-radius: 50%;
-  background-color: var(--pressed-state);
+  background-color: var(--primary-brand);
   width: 40px;
   height: 40px;
 }
+.icons-button:hover,
+.icons-button:focus {
+  background-color: var(--pressed-state);
+
+}
+
+.icon-team {
+  fill:var(--light);
+}
+
+
+
+
 /* <!-- <<<<<<<<<<<<<<<<<CUSTOMERS>>>>>>>>>>> --> */
 .section-customers {
   list-style: none;
@@ -427,9 +437,6 @@ background-image: url(../images/icons/antenna.svg);
 }
 
 .customer-button {
-  margin: 0;
-  padding: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,12 +447,23 @@ background-image: url(../images/icons/antenna.svg);
   height: 88px;
 }
 
+.customer-button:is(:hover,:focus) {
+  border: 1px solid var(--pressed-state);
 
-
-.customer-icon:hover {
-  display: block;
-  fill: var(--pressed-state);
 }
+
+.customer-button:is(:hover,:focus) .customer-icon {
+  fill: var(--pressed-state);
+
+
+}
+
+.customer-icon {
+  fill: var(--subtle-text);
+}
+
+
+/* <<<<<<<<<<<<<<<<<foooter>>>>>>>>>>>>>> */
 
 footer {
   padding-top: 100px;
@@ -468,16 +486,18 @@ footer {
 }
 
 .social {
+  
   margin-bottom: 16px;
   color: var(--body-back);
 }
 
 .section-social {
+  display: block;
 }
 
 .social-list {
   display: flex;
-  justify-content: center;
+  
   gap: 16px;
 }
 
@@ -493,7 +513,12 @@ footer {
   border-radius: 50%;
 }
 
+.social-button:is(:hover,:focus){
+  background-color: var(--succes);
+}
+
 .social-icon {
+  fill:var(--light);
 }
 
 .filter {
@@ -541,6 +566,10 @@ footer {
 
 .unl {
   text-decoration: none;
+}
+.unl:is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
 }
 
 /* .site-nav .unline.current {
