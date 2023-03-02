@@ -1,21 +1,28 @@
 :root {
-  --primary-color: rgba(46, 47, 66, 1);
-  --text-color: rgba(67, 68, 85, 1);
-  --accent-color: rgba(77, 90, 229, 1);
-  --our-team-color: rgba(244, 244, 253, 1);
-  --footer-logo-color: rgba(244, 244, 253, 1);
-  --footer-text-color: rgba(231, 233, 252, 1);
-  --button-unactive: rgba(244, 244, 253, 1);
-  --button-active: rgba(64, 75, 191, 1);
+  --primary-brand: rgba(77, 90, 229, 1);
+  --pressed-state: rgba(64, 75, 191, 1);
+  --dark: rgba(46, 47, 66, 1);
+
+  --succes: rgba(49, 208, 170, 1);
+  --text: rgba(67, 68, 85, 1);
+  --subtle-text:rgba(142, 143, 153, 1);
+ 
+  --accent:rgba(231, 233, 252, 1);
+  --light: rgba(244, 244, 253, 1);
+
+  --modal-overlay:rgba(46, 47, 66, 0.4);
+
+  --hero-background: rgba(46, 47, 66, 0.7);
+
   --button-active-text: rgba(255, 255, 255, 1);
-  --h1-coolor: rgba(244, 244, 253, 1);
   --body-back: #ffffff;
-  --customers-slate: rgba(142, 143, 153, 1);
+
+  
 }
 
 body {
   background-color: var(--body-back);
-  color: var(--primary-color);
+  color: var(--dark);
 
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -55,15 +62,15 @@ svg {
 
 .unline:hover,
 .unline:focus {
-  color: var(--button-active);
+  color: var(--pressed-state);
 }
 
 .navy {
-  color: var(--primary-color);
+  color: var(--dark);
 }
 
 .textcolor {
-  color: var(--text-color);
+  color: var(--text);
 }
 
 .hiddenvisaily {
@@ -99,7 +106,7 @@ svg {
 }
 
 .page-header {
-  border-bottom: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--light);
 }
 
 .overlay {
@@ -111,8 +118,7 @@ svg {
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)  ),
     url(../images/people-office\ 1.jpg);
 
   background-repeat: no-repeat;
@@ -140,7 +146,7 @@ svg {
   display: inline-block;
 
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--dark);
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -186,8 +192,8 @@ svg {
 .section-hero {
   padding-top: 188px;
   padding-bottom: 188px;
-  background-color: var(--primary-color);
-  color: var(--h1-coolor);
+  background-color: var(--dark);
+  color: var(--light);
 }
 .button-hero {
   display: block;
@@ -196,7 +202,7 @@ svg {
   border-radius: 4px;
   padding: 16px 32px;
 
-  background-color: var(--accent-color);
+  background-color: var(--primary-brand);
   color: var(--button-active-text);
   border: 0;
 
@@ -210,11 +216,11 @@ svg {
 
 .button-hero:hover,
 .button-hero:focus {
-  background-color: var(--button-active);
+  background-color: var(--pressed-state);
 }
 
 .back-hero-foooter {
-  background-color: var(--primary-color);
+  background-color: var(--dark);
 }
 
 .hero-header {
@@ -229,6 +235,8 @@ svg {
   margin: 0;
   padding-top: 120px;
   padding-bottom: 60px;
+
+
 }
 
 .feat {
@@ -240,32 +248,21 @@ svg {
   width: 264px;
 }
 
-/* .features .item::before {
-  content: '';
-  display: block;
-  margin-bottom: 8px;
-  height: 112px;
-
-  background-color: var(--h1-coolor);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .features-button {
-  margin: 0;
+  background-color: var(--light);
   width: 264px;
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
-  border: 0;
 
+  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.features-icon {
-}
+
 
 .iconicon {
   display: block;
@@ -334,7 +331,7 @@ background-image: url(../images/icons/antenna.svg);
 .section-team {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: var(--our-team-color);
+  background-color: var(--light);
 }
 
 .header-team {
@@ -400,11 +397,11 @@ background-image: url(../images/icons/antenna.svg);
   margin: 0;
   border: 0;
   border-radius: 50%;
-  background-color: var(--button-active);
+  background-color: var(--pressed-state);
   width: 40px;
   height: 40px;
 }
-
+/* <!-- <<<<<<<<<<<<<<<<<CUSTOMERS>>>>>>>>>>> --> */
 .section-customers {
   list-style: none;
   padding-top: 130px;
@@ -437,11 +434,17 @@ background-image: url(../images/icons/antenna.svg);
   align-items: center;
   justify-content: center;
 
-
-  border: 1px solid var(--customers-slate);
+  border: 1px solid var(--subtle-text);
   border-radius: 4px;
   width: 168px;
-  height: 68px;
+  height: 88px;
+}
+
+
+
+.customer-icon:hover {
+  display: block;
+  fill: var(--pressed-state);
 }
 
 footer {
@@ -461,7 +464,7 @@ footer {
   margin-top: 16px;
   width: 264px;
   line-height: 1.5;
-  color: var(--footer-text-color);
+  color: var(--light);
 }
 
 .social {
@@ -472,7 +475,7 @@ footer {
 .section-social {
 }
 
-.social-list {  
+.social-list {
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -528,9 +531,9 @@ footer {
 
 .textcard {
   background-color: var(--body-back);
-  border-bottom: 1px solid var(--footer-text-color);
-  border-left: 1px solid var(--footer-text-color);
-  border-right: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--light);
+  border-left: 1px solid var(--light);
+  border-right: 1px solid var(--light);
   padding-top: 32px;
   padding-left: 16px;
   padding-bottom: 32px;
@@ -550,12 +553,12 @@ color: deeppink;
 
 .button.secondary {
   min-width: 69px;
-  border: 1px solid var(--footer-text-color);
+  border: 1px solid var(--light);
   border-radius: 4px;
   padding: 12px 24px;
 
-  background-color: var(--button-unactive);
-  color: var(--accent-color);
+  background-color: var(--light);
+  color: var(--primary-brand);
   cursor: pointer;
 
   font-family: inherit;
@@ -567,20 +570,20 @@ color: deeppink;
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  background-color: var(--button-active);
+  background-color: var(--pressed-state);
   color: var(--button-active-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: 1px solid var(--button-active);
+  border: 1px solid var(--pressed-state);
 }
 
 /* ________________---------FONTS--------______________ */
 
 .logo-web {
-  color: var(--accent-color);
+  color: var(--primary-brand);
 }
 .logo-studio {
-  color: var(--footer-logo-color);
+  color: var(--light);
 }
 
 /* ________________---------FONTS--------______________ */
