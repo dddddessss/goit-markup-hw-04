@@ -535,6 +535,7 @@ footer {
 }
 
 .cards .item {
+
   width: 360px;
   background: var(--body-back);
 }
@@ -551,14 +552,12 @@ footer {
 }
 
 .unl {
-  display: block;
+  display: inline-block; 
   text-decoration: none;
-
-  cursor: pointer;
 }
 .unl:is(:hover, :focus) {
-  border: 1px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   
 }
 
